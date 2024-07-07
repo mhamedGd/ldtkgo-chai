@@ -1,4 +1,4 @@
-module github.com/solarlune/ldtkgo
+module github.com/mhamedgd/ldtkgo-chai
 
 go 1.16
 
