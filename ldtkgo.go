@@ -187,9 +187,10 @@ func (t *Tile) FlipY() bool {
 // Layer represents a Layer, which can be of multiple types (Entity, AutoTile, Tile, or IntGrid).
 type Layer struct {
 	// The width and height of the layer
-	Identifier string   `json:"__identifier"`     // Identifier (name) of the Layer
-	IID        string   `json:"iid"`              // IID of the layer
-	GridSize   int      `json:"__gridsize"`       // Grid size of the Layer
+	Identifier string   `json:"__identifier"` // Identifier (name) of the Layer
+	IID        string   `json:"iid"`          // IID of the layer
+	GridSize   int      `json:"__gridsize"`   // Grid size of the Layer
+	Opacity    float32  `json:"__opacity"`
 	OffsetX    int      `json:"__pxTotalOffsetX"` // The offset of the layer
 	OffsetY    int      `json:"__pxTotalOffsetY"`
 	CellWidth  int      `json:"__cWid"` // Overall width of the layer in cell count (i.e. a 160x80 level with 16x16 tiles would have a CellWidth and CellHeight of 10x5)
